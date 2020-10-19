@@ -1,12 +1,12 @@
 import { LitElement, css, svg } from "lit-element";
-import Random from "./random.js";
-import { accessoriesTypes } from "./accessories";
-import { facialHairTypes } from "./facial-hair";
-import { topTypes } from "./top";
-import { mouthTypes } from "./mouth";
-import { clothesType } from "./clothes";
-import { eyeTypes } from "./eyes";
-import { eyebrowTypes } from "./eyebrows";
+import Random from "./svg-js/random.js";
+import { accessoriesTypes } from "./svg-js/accessories";
+import { facialHairTypes } from "./svg-js/facial-hair";
+import { topTypes } from "./svg-js/top";
+import { mouthTypes } from "./svg-js/mouth";
+import { clothesType } from "./svg-js/clothes";
+import { eyeTypes } from "./svg-js/eyes";
+import { eyebrowTypes } from "./svg-js/eyebrows";
 
 class AAvataaar extends LitElement {
   static get hatColors() {
