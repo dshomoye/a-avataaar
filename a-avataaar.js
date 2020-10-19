@@ -147,7 +147,7 @@ class AAvataaar extends LitElement {
     return css`
       :host {
         display: inline-block;
-        width: 64px;
+        width: var(--avataaar-width, 64px);
         --avataaar-internal-circle-color: var(--avataaar-circle-color, #6fb8e0);
       }
     `;

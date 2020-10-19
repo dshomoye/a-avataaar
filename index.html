@@ -15,6 +15,9 @@
     display: flex;
     align-items: center;
   }
+  .my-av {
+    --avataaar-width: 120px;
+  }
   </style>
 </head>
 
@@ -26,7 +29,7 @@
     <a-avataaar identifier="john.doe@example.com"></a-avataaar>
   </j-card>
   <j-card>
-    <a-avataaar id="avataaar" identifier="Your name"></a-avataaar>
+    <a-avataaar id="avataaar" identifier="Your name" class="my-av"></a-avataaar>
     <vaadin-text-field id="input" value="Your name" slot="header"></vaadin-text-field>
   </j-card>
   <script>
