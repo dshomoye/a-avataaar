@@ -92,6 +92,7 @@ class AAvataaar extends LitElement {
   }
 
   set identifier(identifier) {
+    if(!identifier) return
     this._identifier = identifier;
     const identifierSeed = this.hash(identifier);
     this.random = new Random(identifierSeed);
@@ -140,8 +141,6 @@ class AAvataaar extends LitElement {
   }
   constructor() {
     super();
-    // Initialize properties
-    this.identifier = "";
   }
   static get styles() {
     return css`
