@@ -152,6 +152,10 @@ class AAvataaar extends LitElement {
     `;
   }
 
+  get svgRoot() {
+    return this.shadowRoot.querySelectorAll("svg")
+  }
+
   render() {
     return svg`
           <svg
@@ -238,6 +242,18 @@ class AAvataaar extends LitElement {
         </g>
       </svg>
 `;
+  }
+
+  updated() {
+    if (this.svgRoot.length > 0) {
+      const r = this.svgRoot[0]
+      let event = new CustomEvent("svgchange", {
+        detail: {
+          data: r.outerHTML
+        }
+      })
+      this.dispatchEvent(event)
+    }
   }
 }
 // Register the element with the browser
